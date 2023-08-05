@@ -1,0 +1,141 @@
+.team {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.team h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.team h3 {
+  margin-bottom: 0.5rem;
+  padding-bottom: 20px;
+}
+
+.our-chefs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 3fr));
+  grid-gap: 1.5rem;
+}
+
+.our-chefs .item .image img {
+  width: 100%;
+}
+
+.our-chefs .item {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.our-chefs .item:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.our-chefs .item:hover.item:before {
+  display: block;
+}
+
+.our-chefs .item .chef-info {
+  position: absolute;
+  cursor: pointer;
+  top: 130%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  align-items: center;
+  transition: 1s;
+}
+
+.our-chefs .item .chef-info h3 {
+  font-size: 1.7rem;
+  color: var(--white);
+  padding: 0.8rem 0;
+  text-transform: uppercase;
+}
+
+.our-chefs .item .chef-info span {
+  font-size: 1.7rem;
+  color: var(--light);
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.our-chefs .item .chef-info ul {
+  list-style: none;
+  display: flex;
+  grid-gap: 2rem;
+  padding: 3rem 0;
+}
+
+.our-chefs .item .chef-info ul li a {
+  color: var(--orange);
+  font-size: 1.8rem;
+}
+
+.our-chefs .item:hover .chef-info {
+  top: 0;
+}
+
+footer {
+  background: var(--color-bg1);
+  padding-top: 5rem;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+.footer-container > div h4 {
+  margin-bottom: 1.2rem;
+}
+
+.footer-1 {
+  padding: 0 50px;
+}
+
+.footer-1 p {
+  margin: 0 0 2rem;
+}
+
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--color-bg2);
+}

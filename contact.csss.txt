@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ero {
+  height: 200vh;
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.firstHero {
+  height: 50%;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.firstHero div {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.firstHero div h5 {
+  color: #ff0000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+}
+
+.firstHero div p {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .ero {
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: initial;
+  }
+
+  .firstHero {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: ends;
+    justify-content: center;
+  }
+
+  .firstHero div {
+    margin: 10px 0;
+    display: flex;
+    align-items: left;
+    justify-content: right;
+  }
+  .h-1 {
+    padding-right: 175px;
+  }
+  .h-2 {
+    padding-right: 121px;
+  }
+  .h-3 {
+    padding-right: 121px;
+  }
+
+  .p-2 {
+    padding-right: 155px;
+  }
+  .p-3 {
+    padding-right: 95px;
+  }
+}
+.secondHero {
+  height: 50%;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: white;
+}
+
+form input {
+  height: 40px;
+  border: 1px solid #ff0000;
+}
+
+.frm1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.frm1 input {
+  width: 49.5%;
+}
+
+.frm2 .inpMedium {
+  width: 100%;
+}
+
+.frm2,
+.frm3 {
+  width: 90%;
+}
+
+.inpBig {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+.inpBig::placeholder {
+  position: absolute;
+  top: 10px;
+}
+::placeholder {
+  padding-left: 10px;
+  color: #ff0000;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+@media (min-width: 700px) {
+  .secondHero {
+    height: 100%;
+    background-color: white;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form {
+    margin-top: 100px;
+  }
+
+  .frm1 {
+    width: 90%;
+  }
+}
+
+.hello {
+  height: 10vh;
+  width: 100%;
+  background-color: red;
+  font-size: 100px;
+}
